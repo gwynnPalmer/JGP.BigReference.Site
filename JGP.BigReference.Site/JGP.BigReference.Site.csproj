@@ -12,7 +12,6 @@
     <Folder Include="Application\Services\" />
     <Folder Include="Areas\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Security\" />
   </ItemGroup>
 
 </Project>

@@ -4,9 +4,20 @@ namespace JGP.BigReference.Site.Controllers
 {
     public class SecurityController : Controller
     {
-        public IActionResult Index()
+        public IActionResult ForgotPassword()
         {
             return View();
         }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+
     }
 }

@@ -9,6 +9,45 @@ namespace JGP.BigReference.Site.Controllers
             return View();
         }
 
+        public IActionResult Buttons()
+        {
+            return View();
+        }
+
+        public IActionResult Cards()
+        {
+            return View();
+        }
+
+        public IActionResult Charts()
+        {
+            return View();
+        }
+
+        public IActionResult Tables()
+        {
+            return View();
+        }
+
+        public IActionResult UtilitiesAnimation()
+        {
+            return View();
+        }
+
+        public IActionResult UtilitiesBorder()
+        {
+            return View();
+        }
+
+        public IActionResult UtilitiesColor()
+        {
+            return View();
+        }
+
+        public IActionResult UtilitiesOther()
+        {
+            return View();
+        }
 
     }
 }
