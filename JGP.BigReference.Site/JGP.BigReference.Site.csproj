@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\Helpers\" />
+    <Folder Include="Application\Middleware\" />
+    <Folder Include="Application\Services\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Security\" />
+  </ItemGroup>
+
+</Project>
