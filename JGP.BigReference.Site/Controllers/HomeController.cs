@@ -24,6 +24,11 @@ namespace JGP.BigReference.Site.Controllers
             return View();
         }
 
+        public IActionResult DemoDashboard()
+        {
+            return View();
+        }
+
         public IActionResult Tables()
         {
             return View();

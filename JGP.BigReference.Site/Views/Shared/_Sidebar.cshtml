@@ -2,7 +2,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a asp-controller="Home" asp-action="Index" class="sidebar-brand d-flex align-items-center justify-content-center">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="sidebar-brand d-flex align-items-center justify-content-center">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -14,9 +14,10 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a asp-controller="Home" asp-action="Index"  class="nav-link">
+                <a asp-area="" asp-controller="Home" asp-action="Index"  class="nav-link">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Dashboard</span>
+                </a>
             </li>
 
             <!-- Divider -->
@@ -27,6 +28,13 @@
                 Interface
             </div>
 
+            <li class="nav-item">
+                <a asp-area="" asp-controller="Home" asp-action="DemoDashboard" class="nav-link">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Demo Dashboard</span>
+                </a>
+            </li>
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -36,8 +44,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
-                        <a asp-action="Buttons" class="collapse-item">Buttons</a>
-                        <a asp-action="Cards" class="collapse-item">Cards</a>
+                        <a asp-area="" asp-controller="Home" asp-action="Buttons" class="collapse-item">Buttons</a>
+                        <a asp-area="" asp-controller="Home" asp-action="Cards" class="collapse-item">Cards</a>
                     </div>
                 </div>
             </li>
@@ -52,10 +60,23 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a asp-action="UtilitiesColor" class="collapse-item" >Colors</a>
-                        <a asp-action="UtilitiesBorder" class="collapse-item" >Borders</a>
-                        <a asp-action="UtilitiesAnimation" class="collapse-item" >Animations</a>
-                        <a asp-action="UtilitiesOther" class="collapse-item">Other</a>
+                        <a asp-area="" asp-controller="Home" asp-action="UtilitiesColor" class="collapse-item" >Colors</a>
+                        <a asp-area="" asp-controller="Home" asp-action="UtilitiesBorder" class="collapse-item" >Borders</a>
+                        <a asp-area="" asp-controller="Home" asp-action="UtilitiesAnimation" class="collapse-item" >Animations</a>
+                        <a asp-area="" asp-controller="Home" asp-action="UtilitiesOther" class="collapse-item">Other</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTools" aria-expanded="true" aria-controls="collapseTools">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Tools</span>
+                </a>
+                <div id="collapseTools" class="collapse" aria-labelledby="headingTools" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Referencing:</h6>
+                        <a asp-area="Referencing" asp-controller="Referencing" asp-action="Index" class="collapse-item" >Generator</a>
                     </div>
                 </div>
             </li>
@@ -77,12 +98,12 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a asp-controller="Security" asp-action="Login" class="collapse-item">Login</a>
-                        <a asp-controller="Security" asp-action="Register" class="collapse-item">Register</a>
-                        <a asp-controller="Security" asp-action="ForgotPassword" class="collapse-item">Forgot Password</a>
+                        <a asp-area="" asp-controller="Security" asp-action="Login" class="collapse-item">Login</a>
+                        <a asp-area="" asp-controller="Security" asp-action="Register" class="collapse-item">Register</a>
+                        <a asp-area="" asp-controller="Security" asp-action="ForgotPassword" class="collapse-item">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a asp-controller="Error" asp-action="GetErrorPage" asp-route-code="404" class="collapse-item">404 Page</a>
+                        <a asp-area="" asp-controller="Error" asp-action="GetErrorPage" asp-route-code="404" class="collapse-item">404 Page</a>
                         @*<a class="collapse-item" href="blank.html">Blank Page</a>*@
                     </div>
                 </div>
@@ -90,14 +111,14 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a asp-action="Charts" class="nav-link">
+                <a asp-area="" asp-controller="Home" asp-action="Charts" class="nav-link">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Charts</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a asp-action="Tables" class="nav-link">
+                <a asp-area="" asp-controller="Home" asp-action="Tables" class="nav-link">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
             </li>

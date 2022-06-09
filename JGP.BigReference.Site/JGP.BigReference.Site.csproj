@@ -10,8 +10,12 @@
     <Folder Include="Application\Helpers\" />
     <Folder Include="Application\Middleware\" />
     <Folder Include="Application\Services\" />
-    <Folder Include="Areas\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
   </ItemGroup>
 
 </Project>
